@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © Made by Varad Ubale -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/editTextGrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Grade (e.g., 9.5)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginEnd="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextCredits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Credits (e.g., 4)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/btnRemoveCourse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:backgroundTint="#EF4444"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

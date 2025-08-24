@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © Made by Varad Ubale -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F0F4F8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator Hub"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleTextView"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnGoToBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:backgroundTint="#3B82F6"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:id="@+id/btnGoToCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CGPA Calculator"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:backgroundTint="#10B981"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Made by Varad Ubale"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#64748B"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © Made by Varad Ubale -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8"
+    tools:context=".CgpaCalculatorActivity">
+
+    <TextView
+        android:id="@+id/titleTextViewCGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CGPA Calculator"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTextViewCGPA"
+        android:layout_above="@+id/bottomLayout">
+
+        <LinearLayout
+            android:id="@+id/coursesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAddCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Course"
+            android:backgroundTint="#6366F1"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnCalculateCGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate CGPA"
+            android:backgroundTint="#10B981"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewResultCGPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="22sp"
+            android:textColor="#1E293B"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Made by Varad Ubale"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#64748B"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
